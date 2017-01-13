@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>ESalary</title>
+	<link rel="stylesheet" href="/home/experion/Desktop/amal/bootstrap&css/bootstrap-3.3.7-dist/css/bootstrap.css">
+	<link rel="stylesheet" href="profile.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="/home/experion/Desktop/amal/jquery/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+	<link rel="stylesheet" href="/home/experion/Desktop/amal/jquery/jquery-ui-1.12.1.custom/jquery-ui.css">
+	<script src="val.js"></script>
+	<script src="/home/experion/Desktop/amal/jquery/jquery-validation-1.15.0/dist/jquery.validate.js"></script>
+	<!--<script src="//cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js">-->
+	<script src="profile.js"></script>
+
+</head>
+
+<body>
+	<div class="container">
+		<!--table section-->
+		<div class="form-style-3">
+			<table id="employeeTable">
+				<thead>
+					<th>Employee Id</th>
+					<th>Employee Name</th>
+					<th>Designation</th>
+					<th>Total Salary</th>
+					<th>Update</th>
+					<th>Remove</th>
+					
+
+
+				</thead>
+			</table>
+		</div>
+		<br>
+		<br>
+		<!--form  section-->
+		<div align="center" class="form-style-3">
+			<input type="button" id="btnNew" name="New" value="New">
+			<form id="employeeForm" name="f1">
+				<fieldset>
+					<legend>Employee Information</legend>
+					<label for="field1"><span>Employee ID<span class="required">*</span></span></label>
+					<input type="text" class="input-field" id="txtId"  required />
+					<label for="field2"><span>Employee Name <span class="required">*</span></span></label>
+					<input type="text" class="input-field" id="txtName"/>
+					<label for="field2"><span>Designation <span class="required">*</span></span></label>
+					<input type="text" class="input-field" id="txtDesignation" value="" required/>
+					<label for="field2"><span>Basic Pay <span class="required">*</span></span></label>
+					<input type="text" class="salary" id="txtBasicPay" value="" required/>
+					<label for="field2"><span>Daily Allowance <span class="required">*</span></span></label>
+					<input type="text" class="salary" id="txtDailyAllowance" value="" required/>
+					<label for="field2"><span>House Rental Allowance <span class="required">*</span></span></label>
+					<input type="text" class="salary" id="txtHouseRentalAllowance" value="" required/>
+					<label for="field2"><span>Medical Allowance <span class="required">*</span></span></label>
+					<input type="text" class="salary" id="txtMedicalAllowance" value="" required/>
+					<label for="field2"><span>Total Salary <span></span></span></label>
+					<input type="text" class="input-field" id="txtTotalSalary" value="" readonly="readonly" required/>
+					<br><br>
+					<input type="submit" id="btnSave" name="save" value="Save">
+					<input  id="btnCancel"  type="reset"" name="Cancel" value="Cancel"><br>
+				</fieldset>
+			</form>
+			<div class="success">Successfully Submitted</div>
+		</div>
+	</div>
+</body>
+
+</html>

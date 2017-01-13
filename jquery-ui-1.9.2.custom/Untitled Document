@@ -1,0 +1,18 @@
+$('#btn1').click(function(){      
+       var tbl = document.getElementById("employeeTable");
+       var row = tbl.insertRow();      
+       var id = row.insertCell();
+        var name = row.insertCell();
+         var department = row.insertCell();
+          var gender = row.insertCell();
+           var dob = row.insertCell();
+       });
+        $( "#employeeForm" ).click(function(){
+                var id = $("#field1").val();
+                var name = $("#field2").val();
+                var dob = $("#dob").val();
+                var dept = $("#dept").val();
+                var gender = $("#gen").val();
+                var markup = "<tr><td>" + id + "</td><td>" + name + "</td><td>" + dob + "</td><td>" + dept + "</td><td>" + gender + "</td></tr>";
+            $("table tbody").append(markup);
+        });
